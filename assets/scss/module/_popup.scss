@@ -51,7 +51,7 @@
     }
 
     .form-group {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
 
       label {
         display: block;
@@ -67,6 +67,18 @@
       height: 38px;
       padding: 0 7px;
       box-sizing: border-box;
+      border-radius: 1px;
+      border: 1px solid $input-border-color;
+      box-shadow: 0 3px 0 rgba(black, 0.05);
+    }
+
+    .btn-login {
+      width: 219px;
+      height: 40px;
+      background: $btn-login-background;
+      border: 0;
+      color: white;
+      margin-top: 10px;
     }
   }
 }
