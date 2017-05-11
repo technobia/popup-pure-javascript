@@ -8,8 +8,10 @@
 
   .btn-close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
+    border: 0;
+    background: none;
   }
 
   .left-side {
@@ -85,6 +87,63 @@
       border: 0;
       color: white;
       margin-top: 15px;
+
+      &:hover {
+        background-color: darken($btn-login-background, 12%);
+      }
+    }
+  }
+
+  .right-side {
+    margin-left: 40px;
+    margin-right: 18px;
+    width: 100%;
+
+    .header {
+      color: $tab-title-color;
+      font-size: 14px;
+      height: 43px;
+      line-height: 43px;
+      margin-bottom: 57px;
+    }
+
+    .btn {
+      border-radius: 2px;
+      height: 51px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      text-decoration: none;
+
+      &-primary {
+        background: $blue;
+
+        &:hover {
+          background-color: darken($blue, 12%);
+        }
+      }
+
+      &-danger {
+        background: $red;
+
+        &:hover {
+          background-color: darken(red, 12%);
+        }
+      }
+
+      .icon {
+        height: 22px;
+        margin-left: 20px;
+      }
+
+      .text {
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        margin-right: 20px;
+      }
     }
   }
 }
