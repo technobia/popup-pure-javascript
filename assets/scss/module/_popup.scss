@@ -30,7 +30,7 @@
         cursor: pointer;
         margin-right: 1px;
 
-        &.active, &:hover {
+        &.active {
           color: $tab-title-color;
           background: white;
         }
