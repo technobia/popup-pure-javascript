@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Popup</title>
-    <script src="js/main.js" type="text/javascript"></script>
     <link rel="stylesheet" href="assets/css/style.min.css" type="text/css">
 </head>
 <body>
@@ -11,7 +10,7 @@
     <div id="popup">
         <button id="btn-close" class="btn-close"><img src="assets/img/icon-close.png"></button>
         <div class="left-side">
-            <div class="tabs">
+            <div class="tabs" id="tabs">
                 <div class="tabs-item active"><a href="#login">Login</a></div>
                 <div class="tabs-item"><a href="#signup">Signup</a></div>
             </div>
@@ -32,7 +31,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="tab-pane" id="signup">...</div>
+                <div class="tab-pane" id="signup" style="height: 204px;">Content will update soon...</div>
             </div>
         </div>
         <div class="right-side">
@@ -47,5 +46,8 @@
             </a>
         </div>
     </div>
+
+    <script src="js/popup.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
