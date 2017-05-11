@@ -11,4 +11,62 @@
     top: 0;
     right: 0;
   }
+
+  .left-side {
+    width: 386px;
+    flex-shrink: 0;
+
+    .tabs {
+      display: flex;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba($tab-title-color, 0.6);
+        font-size: 14px;
+        height: 43px;
+        padding: 0 19px;
+        cursor: pointer;
+        margin-right: 1px;
+
+        &.active, &:hover {
+          color: $tab-title-color;
+          background: white;
+        }
+      }
+    }
+
+    .tab-content {
+      background: white;
+      padding: 29px 19px;
+
+      .tab-pane {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+
+      label {
+        display: block;
+        color: $form-label-color;
+        margin-bottom: 5px;
+      }
+    }
+
+    .form-control {
+      width: 100%;
+      font-size: 12px;
+      color: $input-text-color;
+      height: 38px;
+      padding: 0 7px;
+      box-sizing: border-box;
+    }
+  }
 }

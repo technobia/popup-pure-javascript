@@ -10,12 +10,27 @@
     <div id="popup">
         <button class="btn-close"><img src="assets/img/icon-close.png"></button>
         <div class="left-side">
-            <ul class="tabs">
-                <li class="tabs-item active">Login</li>
-                <li class="tabs-item active">Signup</li>
-            </ul>
+            <div class="tabs">
+                <div class="tabs-item active">Login</div>
+                <div class="tabs-item">Signup</div>
+            </div>
             <div class="tab-content">
-                <div class="tab-pane active" id="login">...</div>
+                <div class="tab-pane active" id="login">
+                    <form name="popupForm">
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="text" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="Enter your password">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Login</button>
+                            <a href="#" class="pull-right">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
                 <div class="tab-pane" id="signup">...</div>
             </div>
         </div>
