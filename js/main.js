@@ -34,7 +34,7 @@ function onLoad() {
     tabButtonList.forEach(function(item) {
         item.addEventListener('click', function(event) {
             event.preventDefault();
-            lazadaModal.switchTab(tabButtonList, tabContentList, this);
+            new switchTab(tabButtonList, tabContentList, this);
         });
     });
 }
