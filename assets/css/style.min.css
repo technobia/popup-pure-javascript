@@ -1,1 +1,1 @@
-a{color:#199db4}body{background:#999}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");a{color:#199db4}body{background:#999;font:14px 'Open Sans', sans-serif;margin:0;position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center}#popup{min-width:665px;background:#f1f1f1;box-shadow:0 3px 0 rgba(0,0,0,0.3);padding:19px 19px 17px;display:flex;position:relative}#popup .btn-close{position:absolute;top:0;right:0}
