@@ -1,10 +1,22 @@
+#btn-open {
+  background: $blue;
+  color: white;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
 #popup {
   min-width: 665px;
   background: $popup-background;
   box-shadow: 0 3px 0 rgba(black, 0.3);
   padding: 19px 19px 17px;
-  display: flex;
+  display: none;
   position: relative;
+
+  &.open {
+    display: flex;
+  }
 
   .btn-close {
     position: absolute;
