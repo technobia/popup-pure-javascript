@@ -5,9 +5,8 @@ if (document.readyState !== 'loading') {
 }
 
 function onLoad() {
-    var lazadaModal = new LazadaModal();
-
     // open and close popup
+    var lazadaModal = new LazadaModal();
     var openButton = document.getElementById('btn-open');
     var closeButton = document.getElementById('btn-close');
 
@@ -21,20 +20,18 @@ function onLoad() {
 
     // tabs
     var tabs = document.getElementById('tabs').childNodes;
+    var switchTab = new SwitchTab(tabs);
     var tabButtonList = [];
-    var tabContentList = [];
+
     for (var i = 0; i < tabs.length; i++) {
         if (tabs[i].nodeName == 'DIV') {
             tabButtonList.push(tabs[i]);
-
-            var tabContentId = getHash(tabs[i].firstChild.getAttribute('href'));
-            tabContentList.push(document.getElementById(tabContentId));
         }
     }
     tabButtonList.forEach(function(item) {
         item.addEventListener('click', function(event) {
             event.preventDefault();
-            new switchTab(tabButtonList, tabContentList, this);
+            switchTab.doSwitch(this);
         });
     });
 }
