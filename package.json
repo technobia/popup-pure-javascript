@@ -1,0 +1,12 @@
+{
+  "name": "lazada-exercise",
+  "version": "1.0.0",
+  "author": "Binh Tran",
+  "description": "Content will be add here soon",
+  "repository": "It should from git",
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "2.0.0"
+  }
+}
