@@ -13,21 +13,21 @@
     };
 
     SwitchTab.prototype.doSwitch = function(element) {
-        clearActiveTab(this.tabButtonList);
-        clearActiveTab(this.tabContentList);
+        this._clearActiveTab(this.tabButtonList);
+        this._clearActiveTab(this.tabContentList);
 
         var selectedId = getHash(element.firstChild.getAttribute('href'));
-        activeSelectTab(document.getElementById(selectedId));
-        activeSelectTab(element);
+        this._activeSelectTab(document.getElementById(selectedId));
+        this._activeSelectTab(element);
     };
 
-    function clearActiveTab(list) {
+    SwitchTab.prototype._clearActiveTab = function(list) {
         list.forEach(function(e) {
             e.className = e.className.replace(' active', '');
         });
-    }
+    };
 
-    function activeSelectTab(tabContent) {
+    SwitchTab.prototype._activeSelectTab = function(tabContent) {
         tabContent.className = tabContent.className + ' active';
-    }
+    };
 }());
