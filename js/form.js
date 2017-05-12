@@ -15,9 +15,10 @@
 
     function validateEmail(email) {
         var error = '';
-        if (email.value.length === 0) {
+        var re = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i.test(email.value);
+        if (!re) {
             email.className = email.className + ' has-error';
-            error = '- Please enter your email \n';
+            error = '- Email not correct \n';
         } else {
             email.className = email.className.replace(' has-error', '');
         }
