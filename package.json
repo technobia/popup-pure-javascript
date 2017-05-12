@@ -4,6 +4,9 @@
   "author": "Binh Tran",
   "description": "Content will be add here soon",
   "repository": "It should from git",
+  "scripts": {
+    "start": "./node_modules/.bin/grunt deploy"
+  },
   "devDependencies": {
     "grunt": "1.0.1",
     "grunt-contrib-watch": "^1.0.0",
